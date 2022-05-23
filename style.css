@@ -1,0 +1,51 @@
+h1{text-align: center;}
+
+.square{
+    height: 100px;
+    width: 100px;
+background-color: rgb(92, 92, 72);
+margin: 2px;
+border: 1px solid black;
+display: inline-block;
+}
+
+.stage{text-align: center;}
+
+
+
+
+
+.o{ position: relative
+    
+}
+
+.o:after{
+position: absolute;
+content: "\2B55";
+font-size: 50px;
+line-height: 100px;
+right: 0;
+left: 0;
+top:0;
+bottom:0;}
+
+
+.x{position: relative;
+    
+}
+
+.x:after{
+position: absolute;
+content: "\274C";
+font-size: 50px;
+line-height: 100px;
+right: 0;
+left: 0;
+top:0;
+bottom:0;}
+
+
+.btn{
+display: flex;
+justify-content: center;
+transform: translateX(855%);}
