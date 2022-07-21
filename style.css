@@ -1,16 +1,22 @@
 h1{text-align: center;}
 
+body{
+    background-image: url(images/paisagem-em-branco-no-parque-natural-durante-o-dia_1308-57676.webp);
+}
 .square{
     height: 100px;
     width: 100px;
-background-color: rgb(92, 92, 72);
+background-color:rgb(246, 246, 235);
 margin: 2px;
 border: 1px solid black;
-display: inline-block;
+display: inline-block;}
+
+.stage{text-align: center;
 }
-
-.stage{text-align: center;}
-
+.container{
+    display: flex;
+    justify-content: center;
+}
 
 
 
@@ -21,7 +27,7 @@ display: inline-block;
 
 .o:after{
 position: absolute;
-content: "\2B55";
+content: "\1F7E2";
 font-size: 50px;
 line-height: 100px;
 right: 0;
@@ -35,8 +41,9 @@ bottom:0;}
 }
 
 .x:after{
+    
 position: absolute;
-content: "\274C";
+content: "\274E";
 font-size: 50px;
 line-height: 100px;
 right: 0;
@@ -44,8 +51,31 @@ left: 0;
 top:0;
 bottom:0;}
 
+.container-contador{
+border-radius: 10px;
+padding: 20px 40px;
+background-color: rgba( 255, 255, 255, 0.462);
+position: relative;
+left: 100px;
+top: 85px;
+height: 150px;
+}
+
+.container-btn{
+    display: flex;
+    justify-content: center;
+}
+
 
 .btn{
-display: flex;
-justify-content: center;
-transform: translateX(855%);}
+color: white;
+padding: 10px 15px;
+border-radius: 5px;
+border: 1px solid transparent;
+background-color:rgb(68, 161, 208);
+cursor: pointer
+}
+
+.btn:hover{
+    background-color:rgb(50, 130, 160) ;
+}

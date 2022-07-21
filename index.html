@@ -8,9 +8,11 @@
     <title>Jogo da velha</title>
 </head>
 <body>
-    <h1>Jogo da velha</h1>
-
+    
+<div class="container">
 <div class="stage">
+    <h1>Jogo da velha</h1>
+    
     <div>
         <div id="0" class="square"></div>
         <div id="1" class="square"></div>
@@ -26,10 +28,23 @@
         <div id="7" class="square"></div>
         <div id="8" class="square"></div>
     </div>
+    <div class="container-btn">
+        <button class="btn" id="btn" >Recomeçar</button>
+    </div>
 </div>
-<div>
-    <button class="btn" id="btn" >Recomeçar</button>
+<div class="container-contador">
+    <div>
+        <h3>Contador</h3>
+    </div>
+    <div>
+        <p id="vitoriaX">Vitórias X : 0</p>
+        <p id="vitoriaO">Vitorias O : 0</p>
+        
+    </div>
 </div>
+</div>
+
+
 <script src="game.js"></script>
 <script src="interface.js"></script>
 </body>

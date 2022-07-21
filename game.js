@@ -1,7 +1,13 @@
 let board = ['','','','','','','','','',]
 let playerTime = 0;
-let symbols = ['o', 'x']
+let symbols = ['x', 'o']
 let gameOver = false
+let player= ""
+let contadorVitoriasX = "0"
+let contadorVitoriasO = "0"
+let paragrafoVitoriaX = document.getElementById("vitoriaX")
+let paragrafoVitoriaO = document.getElementById("vitoriaO")
+
 
 
 function handleMove(position){

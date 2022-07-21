@@ -8,17 +8,32 @@ squares.forEach((square)=>{
 
 
 function handleClick (event){
-
     let square =event.target
     let postion =square.id
    if( handleMove(postion)){
        setTimeout (()=>{
- alert("O jogo acabou, o vencedor foi o jogador " + playerTime)
-       }, 10);
+        descobrindoJogador();
+ alert("O jogo acabou, o vencedor foi o jogador " + player)
+ 
+
+       }, 100);
       
    };
+   
     updateSquares();
     
+}
+
+function descobrindoJogador(){
+    if(playerTime == 0){
+        player =  "X"
+        contadorVitoriasX++
+        paragrafoVitoriaX.innerHTML = "Vitórias X : " + contadorVitoriasX
+    }if( playerTime == 1){
+        player = "bolinha"
+        contadorVitoriasO++
+        paragrafoVitoriaO.innerHTML = "Vitórias O : " + contadorVitoriasO
+    }
 }
 
 function updateSquares(){
