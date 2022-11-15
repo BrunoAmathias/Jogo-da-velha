@@ -1,6 +1,6 @@
 # Jogo da velha 
 
-* Foi criado a famoso jogo da velha 
+* Foi criado o famoso jogo da velha 
 
 * Para sua criação foi utilizado HTML, CSS e JavaScript
 
